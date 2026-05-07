@@ -1,5 +1,8 @@
 # 🎬 MovieMate
 
+[![Watch Demo]([https://youtu.be/OUu5SxK1fJk](https://www.youtube.com/shorts/cW_KuH6DI_w))
+
+
 A modern Android movie discovery app built with **Jetpack Compose**, **Clean Architecture**, and **MVVM**. Designed as a complete reference project for studying production-grade Android development.
 
 > **Why this project?** Most Android tutorials are toy apps with one screen and zero architecture. MovieMate is the opposite — 12 screens, real network calls, local persistence, dependency injection, reactive flows, and a clean separation of concerns. It is a *study* repo: the comments on every file explain *why* the code is the way it is, not just *what* it does.
