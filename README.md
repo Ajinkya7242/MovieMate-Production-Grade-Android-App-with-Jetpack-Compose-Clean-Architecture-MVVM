@@ -6,18 +6,29 @@ A modern Android movie discovery app built with **Jetpack Compose**, **Clean Arc
 
 ---
 
+## 📥 Download APK
+
+> **Grab the latest debug build and install it directly — no Android Studio needed.**
+
+**[⬇️ Download MovieMate APK](./MovieMate.apk)**
+
+> ⚠️ **TMDB API is blocked in some regions (including certain ISPs and countries).** If the app shows errors or loads nothing, **connect to a VPN** and relaunch the app. Any free VPN (ProtonVPN, Windscribe, etc.) with a US/EU server works.
+
+---
+
 ## Table of Contents
 
 1. [Features](#features)
-2. [Setup (5 minutes)](#setup)
-3. [Tech Stack](#tech-stack)
-4. [Architecture Overview](#architecture)
-5. [Folder Structure](#folder-structure)
-6. [SOLID Principles in Practice](#solid-principles-in-practice)
-7. [Suggested Learning Path](#suggested-learning-path)
-8. [Patterns Worth Studying](#patterns-worth-studying)
-9. [Possible Extensions](#extensions)
-10. [Credits](#credits)
+2. [How to Use](#how-to-use)
+3. [Setup (5 minutes)](#setup)
+4. [Tech Stack](#tech-stack)
+5. [Architecture Overview](#architecture)
+6. [Folder Structure](#folder-structure)
+7. [SOLID Principles in Practice](#solid-principles-in-practice)
+8. [Suggested Learning Path](#suggested-learning-path)
+9. [Patterns Worth Studying](#patterns-worth-studying)
+10. [Possible Extensions](#extensions)
+11. [Credits](#credits)
 
 ---
 
@@ -36,6 +47,39 @@ A modern Android movie discovery app built with **Jetpack Compose**, **Clean Arc
 - **Settings** — light / dark / system theme picker, persisted via DataStore
 - **Offline-resilient** — saved lists work without network; per-section error handling on Home
 - **Edge-to-edge UI** with Material 3 + system splash screen API
+
+---
+
+## <a name="how-to-use"></a>📱 How to Use
+
+### Step 1 — Connect to a VPN
+TMDB (The Movie Database) API is **blocked on many regular networks and ISPs** in several regions. The app will show empty screens or network errors without a VPN.
+
+1. Install any free VPN — **ProtonVPN**, **Windscribe**, or **1.1.1.1 by Cloudflare** all work
+2. Connect to a **US or European server**
+3. Keep the VPN on while using the app
+
+> If you see a "Something went wrong" error or the home screen is empty, the VPN is the fix.
+
+### Step 2 — Install the APK
+1. [Download the APK](#-download-apk) from the link above
+2. On your Android device go to **Settings → Install unknown apps** and allow your browser or file manager
+3. Open the downloaded `.apk` file and tap **Install**
+4. Launch **MovieMate** from your home screen
+
+### Step 3 — Explore
+| Screen | How to reach it |
+|---|---|
+| **Home** | Opens automatically — scroll horizontal sections (Trending, Popular, Top Rated…) |
+| **Search** | Tap the 🔍 icon in the bottom bar — type any movie title |
+| **Movie Details** | Tap any movie poster anywhere in the app |
+| **Play Trailer** | On the detail screen, tap the ▶ button on the backdrop image |
+| **Fullscreen Video** | While the trailer plays, tap the fullscreen icon — rotate works automatically |
+| **Genres** | Tap the grid icon in the bottom bar — tap a genre to browse its movies |
+| **Watchlist** | Tap the 🔖 bookmark icon on any detail screen; view list via bottom bar |
+| **Favorites** | Tap the ❤️ heart icon on any detail screen; view list via bottom bar |
+| **Cast Details** | On a detail screen, tap any cast member's photo |
+| **Settings** | Tap the ⚙️ icon — switch between Light / Dark / System theme |
 
 ---
 
@@ -67,6 +111,15 @@ TMDB_API_KEY="paste_your_key_here_with_quotes"
 ./gradlew assembleDebug
 ```
 Or just hit **Run ▶** in Android Studio. Min SDK is **24** (Android 7.0), target SDK is **34** (Android 14).
+
+### Step 4 — Use a VPN if TMDB is blocked
+TMDB's API (`api.themoviedb.org`) is blocked by many ISPs and in several countries. If the app runs but shows errors or blank screens:
+
+1. Install a VPN — **ProtonVPN** (free tier, no account required) or **Windscribe** work well
+2. Connect to any **US or EU server**
+3. Relaunch the app
+
+> This is a TMDB network restriction, not a code bug. The app works perfectly once the API is reachable.
 
 ---
 
