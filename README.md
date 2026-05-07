@@ -1,6 +1,6 @@
 # 🎬 MovieMate
 
-[![Watch Demo]([https://youtu.be/OUu5SxK1fJk](https://www.youtube.com/shorts/cW_KuH6DI_w))
+[![Watch Demo](.logo.png)](https://youtu.be/OUu5SxK1fJk)
 
 
 A modern Android movie discovery app built with **Jetpack Compose**, **Clean Architecture**, and **MVVM**. Designed as a complete reference project for studying production-grade Android development.
