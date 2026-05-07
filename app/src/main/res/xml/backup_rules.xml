@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!--
+      Auto-backup rules.
+      We exclude the MovieMate.db file: the DB is just cached watchlist/favorites
+      that should remain device-local. Excluding it keeps cloud backups small
+      and avoids restoring stale state on a fresh install.
+    -->
+    <exclude domain="database" path="MovieMate.db" />
+    <exclude domain="database" path="MovieMate.db-shm" />
+    <exclude domain="database" path="MovieMate.db-wal" />
+</full-backup-content>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+      A simple movie clapperboard, drawn at the center of an
+      adaptive icon viewport (108x108, with safe area at 72x72).
+    -->
+
+    <!-- Clapper top bar (angled stripes) -->
+    <group android:translateX="30" android:translateY="32">
+        <!-- Body of the clapperboard -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M0,12 L48,12 L48,40 L0,40 Z" />
+
+        <!-- Diagonal top of the clapper -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M2,0 L52,4 L48,12 L0,8 Z" />
+
+        <!-- Black diagonal stripes on the top -->
+        <path
+            android:fillColor="#0E0E0E"
+            android:pathData="M8,2 L14,10 L22,2.5 Z" />
+        <path
+            android:fillColor="#0E0E0E"
+            android:pathData="M26,3.5 L32,11 L40,3.5 Z" />
+    </group>
+
+    <!-- A small play triangle, centered on the body -->
+    <group android:translateX="46" android:translateY="56">
+        <path
+            android:fillColor="#E50914"
+            android:pathData="M0,0 L16,8 L0,16 Z" />
+    </group>
+
+</vector>

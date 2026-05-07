@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      Base app theme. We use Theme.Material3 as the parent so that system
+      widgets (Toast, dialogs not handled by Compose) match Material 3 styling.
+      The actual UI styling is done in Compose via MovieMateTheme.
+    -->
+    <style name="Theme.MovieMate" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!--
+      Splash screen theme using the new SplashScreen API (Android 12+,
+      backported to older versions via androidx.core:core-splashscreen).
+      This replaces the old "show a layout while the app starts" trick.
+    -->
+    <style name="Theme.MovieMate.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.MovieMate</item>
+    </style>
+
+</resources>
